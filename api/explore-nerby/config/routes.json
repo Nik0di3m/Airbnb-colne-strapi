@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/explore-nerbies",
+      "handler": "explore-nerby.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/explore-nerbies/count",
+      "handler": "explore-nerby.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/explore-nerbies/:id",
+      "handler": "explore-nerby.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/explore-nerbies",
+      "handler": "explore-nerby.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/explore-nerbies/:id",
+      "handler": "explore-nerby.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/explore-nerbies/:id",
+      "handler": "explore-nerby.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

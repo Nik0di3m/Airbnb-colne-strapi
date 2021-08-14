@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/live-anywheres",
+      "handler": "live-anywhere.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/live-anywheres/count",
+      "handler": "live-anywhere.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/live-anywheres/:id",
+      "handler": "live-anywhere.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/live-anywheres",
+      "handler": "live-anywhere.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/live-anywheres/:id",
+      "handler": "live-anywhere.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/live-anywheres/:id",
+      "handler": "live-anywhere.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

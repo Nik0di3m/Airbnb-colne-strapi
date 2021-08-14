@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "live_anywheres",
+  "info": {
+    "name": "Live Anywhere"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Text": {
+      "type": "string"
+    }
+  }
+}

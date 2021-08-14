@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "explore_nerbies",
+  "info": {
+    "name": "Explore Nerby"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "City": {
+      "type": "string"
+    },
+    "TimeTravel": {
+      "type": "string"
+    }
+  }
+}
